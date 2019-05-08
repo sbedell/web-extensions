@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Remove FBclid and UTM",
+  "version": "0.1",
+  "description": "Removes fbclid and utm_ (Urchin Tracking Module) query parameters in URLs",
+  "icons": {
+    "48": "icons/noFbclidUtmIcon.png"
+  },
+  "background": {
+    "scripts": ["queryParamsRemover.js"]
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*"
+  ]
+  //,
+  // "applications": {
+  //   "gecko": {
+  //     "id": "sb@github.com"
+  //   }
+  // }
+}
