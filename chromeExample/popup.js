@@ -8,10 +8,9 @@ chrome.storage.sync.get('color', function(data) {
 changeColor.onclick = function(element) {
   let color = element.target.value;
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    // console.log("tabs: ", tabs);
-
     chrome.tabs.executeScript(
-        tabs[0].id,
-        {code: 'document.body.style.backgroundColor = "' + color + '";'});
+      tabs[0].id,
+      {code: 'document.body.style.backgroundColor = "' + color + '";'}
+    );
   });
 };
