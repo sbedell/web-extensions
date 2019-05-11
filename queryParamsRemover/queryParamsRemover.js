@@ -2,10 +2,11 @@
  *  Remove fbclid and utm_ query params 
  */
 
- "use strict";
+"use strict";
 
-function stripBadQueryParams(request) {  
-  const targetQueryParams = ["fbclid", "utm_source", "utm_medium", "utm_campaign", 
+function stripBadQueryParams(request) {
+  // console.log("Intercepting this request: ", JSON.stringify(request));
+  const targetQueryParams = ["fbclid", "gclid", "utm_source", "utm_medium", "utm_campaign", 
         "utm_term", "utm_content", "utm_brand"];
 
   let requestedUrl = new URL(request.url);

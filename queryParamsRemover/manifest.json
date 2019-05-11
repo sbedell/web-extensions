@@ -1,8 +1,7 @@
 {
-  "manifest_version": 2,
   "name": "Remove FBclid and UTM",
-  "version": "0.1",
-  "description": "Removes fbclid and utm_ (Urchin Tracking Module) query parameters in URLs",
+  "version": "0.2",
+  "description": "Removes fbclid, gclid, and utm_ query parameters in URLs.",
   "icons": {
     "48": "icons/noFbclidUtmIcon.png"
   },
@@ -14,7 +13,8 @@
     "webRequestBlocking",
     "http://*/*",
     "https://*/*"
-  ]
+  ],
+  "manifest_version": 2
   // Hey dumb IDEs, guess what, comments are allowed in manifest.json files :D
   // https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json
   // > "It is a JSON-formatted file, with one exception: it is allowed to contain "//"-style comments."
