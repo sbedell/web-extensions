@@ -1,10 +1,9 @@
 # Query Params Remover
 ## Browser extension to remove fbclid and utm_ query params from URLs before they load.
 FBclid - Facebook Click Identifier.
-GClid - Google Click Identifier.
 utm - Urchin Tracking Module. 
 
-For now, the full list of query params that get stripped out of URLs are "fbclid", "gclid", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", and "utm_brand".
+For now, the full list of query params that get stripped out of URLs are "fbclid", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", and "utm_brand".
 
 --- 
 
