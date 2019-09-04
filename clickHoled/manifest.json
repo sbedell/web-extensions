@@ -1,0 +1,19 @@
+{
+  "name": "Fake Newsify",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Change icon of certain news sites to Clickhole or Onion logos lol",
+  "icons": {
+   "48": "icons/clickHoled.png"
+  },
+  "permissions": [
+    "activeTab", // not even 100% sure if you need both of these? 
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.businessinsider.com/*"],
+      "js": ["logo-switcher.js"]
+    }
+  ]
+}
