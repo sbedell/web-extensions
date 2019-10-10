@@ -7,12 +7,11 @@
    "48": "icons/clickHoled.png"
   },
   "permissions": [
-    "activeTab", // not even 100% sure if you need both of these? 
-    "https://*/*"
+    "activeTab"
   ],
   "content_scripts": [
     {
-      "matches": ["https://www.businessinsider.com/*"],
+      "matches": ["https://www.businessinsider.com/*", "https://www.cnn.com/*"],
       "js": ["logo-switcher.js"]
     }
   ]
