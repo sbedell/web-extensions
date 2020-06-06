@@ -30,3 +30,9 @@ https://addons.mozilla.org/en-US/firefox/addon/remove-fbclid-and-utm/
 
 This should stay installed even when exiting / restarting. Might get a notification pop up warning you about dev mode though. 
 Going to look into getting this on the Chrome store soon.
+
+---
+### TODOs
+1. Add utm_referrer
+2. Add functionality to remove the FBclid from copying URLs via "Copy Link Location" (right-click menu). 
+3. Add an on/off toggle switch (could just disable it tho?)
