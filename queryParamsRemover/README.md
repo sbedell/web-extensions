@@ -33,6 +33,6 @@ Going to look into getting this on the Chrome store soon.
 
 ---
 ### TODOs
-1. Add utm_referrer
+1. Add utm_referrer, ?ref, ?ref_url, ?ref_src
 2. Add functionality to remove the FBclid from copying URLs via "Copy Link Location" (right-click menu). 
-3. Add an on/off toggle switch (could just disable it tho?)
+3. Add an on/off toggle switch [on a per site basis?] (could just disable it tho?)
