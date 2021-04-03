@@ -6,8 +6,8 @@
 
 function stripBadQueryParams(request) {
   // console.log("Intercepting this request: ", JSON.stringify(request));
-  const targetQueryParams = ["fbclid", "utm_source", "utm_medium",
-          "utm_campaign", "utm_term", "utm_content", "utm_brand", "utm_name"];
+  const targetQueryParams = ["fbclid", "gclid", "utm_source", "utm_medium", "utm_term",
+                            "utm_campaign",  "utm_content", "utm_name"];
 
   let requestedUrl = new URL(request.url);
   let match = false;
@@ -19,7 +19,7 @@ function stripBadQueryParams(request) {
     }
   });
 
-  // return the stripped URL if a match is found, pass the URL on otherwise as normal (cancel: false)
+  // Return the stripped URL if a match is found. Otherwise, pass the URL on as normal {cancel: false}
   return match ? {redirectUrl: requestedUrl.href} : {cancel: false};
 }
 
@@ -30,7 +30,8 @@ function stripBadQueryParams(request) {
 *  Info on Types: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest/ResourceType
 *  
 */
-let apiInterface = (typeof browser != "undefined") ? browser : chrome;
+const apiInterface = (typeof browser != "undefined") ? browser : chrome;
+
 apiInterface.webRequest.onBeforeRequest.addListener(
   stripBadQueryParams,
   {

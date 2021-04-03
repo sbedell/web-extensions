@@ -1,7 +1,7 @@
 {
   "name": "Remove FBclid and UTM",
-  "version": "1.0",
-  "description": "Removes fbclid and utm_ query parameters in URLs.",
+  "version": "1.1",
+  "description": "Removes fbclid, gclid, and utm_ query parameters in URLs.",
   "icons": {
     "48": "icons/noFbclidUtmIcon.png"
   },
