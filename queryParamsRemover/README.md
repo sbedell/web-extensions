@@ -7,12 +7,13 @@ utm - Urchin Tracking Module - https://en.wikipedia.org/wiki/UTM_parameters
 
 The full list of query params that get stripped out of URLs are (for now):
 - fbclid
+- gclid
 - utm_source
 - utm_medium 
 - utm_campaign
 - utm_term
 - utm_content
-- utm_brand
+- utm_name
 
 --- 
 
@@ -22,7 +23,7 @@ Available on addons.mozilla.org as of August 2019.
 https://addons.mozilla.org/en-US/firefox/addon/remove-fbclid-and-utm/
 
 --- 
-### Chrome/Chromium/Brave installation
+### Chrome / Chromium / Brave installation
 1. Menu -> "More Tools" -> Extensions menu
 2. Toggle Developer mode on
 3. Click "Load unpacked"
@@ -35,4 +36,3 @@ Going to look into getting this on the Chrome store soon.
 ### TODOs
 1. Add utm_referrer, ?ref, ?ref_url, ?ref_src
 2. Add functionality to remove the FBclid from copying URLs via "Copy Link Location" (right-click menu). 
-3. Add an on/off toggle switch [on a per site basis?] (could just disable it tho?)
