@@ -8,6 +8,7 @@ utm - Urchin Tracking Module - https://en.wikipedia.org/wiki/UTM_parameters
 The full list of query params that get stripped out of URLs are (for now):
 - fbclid
 - gclid
+- ysclid
 - utm_source
 - utm_medium 
 - utm_campaign

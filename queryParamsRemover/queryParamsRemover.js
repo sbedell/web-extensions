@@ -20,15 +20,15 @@ function stripBadQueryParams(request) {
   });
 
   // Return the stripped URL if a match is found. Otherwise, pass the URL on as normal {cancel: false}
-  return match ? {redirectUrl: requestedUrl.href} : {cancel: false};
+  return match ? { redirectUrl: requestedUrl.href } : { cancel: false };
 }
 
-/** 
+/**
 *  Event listener for onBeforeRequest (HTTP Requests)
-*  
+*
 *  Info for the RequestFilter: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest/RequestFilter
 *  Info on Types: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest/ResourceType
-*  
+*
 */
 const apiInterface = (typeof browser !== "undefined") ? browser : chrome;
 
