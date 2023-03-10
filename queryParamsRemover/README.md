@@ -14,6 +14,7 @@ The full list of query params that get stripped out of URLs are (for now):
 - utm_term
 - utm_content
 - utm_name
+- utm_id
 
 --- 
 
