@@ -6,7 +6,7 @@
 
 function stripBadQueryParams(request) {
   // console.log("Intercepting this request: ", JSON.stringify(request));
-  const targetQueryParams = ["fbclid", "gclid", "utm_source", "utm_medium", "utm_term",
+  const targetQueryParams = ["fbclid", "gclid", "ysclid", "utm_source", "utm_medium", "utm_term",
                             "utm_campaign",  "utm_content", "utm_name", "utm_id"];
 
   let requestedUrl = new URL(request.url);
@@ -30,7 +30,7 @@ function stripBadQueryParams(request) {
 *  Info on Types: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest/ResourceType
 *  
 */
-const apiInterface = (typeof browser != "undefined") ? browser : chrome;
+const apiInterface = (typeof browser !== "undefined") ? browser : chrome;
 
 apiInterface.webRequest.onBeforeRequest.addListener(
   stripBadQueryParams,
