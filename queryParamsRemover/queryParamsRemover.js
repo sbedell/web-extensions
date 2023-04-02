@@ -6,8 +6,10 @@
 
 function stripBadQueryParams(request) {
   // console.log("Intercepting this request: ", JSON.stringify(request));
+
   const targetQueryParams = ["fbclid", "gclid", "ysclid", "utm_source", "utm_medium", "utm_term",
-                            "utm_campaign",  "utm_content", "utm_name", "utm_id"];
+                             "utm_campaign",  "utm_content", "utm_name", "utm_id",
+                             "__cft__[0]", "__tn__"];
 
   let requestedUrl = new URL(request.url);
   let match = false;
