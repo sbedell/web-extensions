@@ -5,9 +5,39 @@
 "use strict";
 
 function stripBadQueryParams(request) {
-  const targetQueryParams = ["fbclid", "gclid", "ysclid", "utm_source", "utm_medium", "utm_term",
-                            "utm_campaign",  "utm_content", "utm_name", "utm_id",
-                            "__cft__[0]", "__tn__", "si"];
+  const targetQueryParams = [
+    "fbclid",
+    "gclid",
+    "gclsrc",
+    "ysclid",
+    "dclid",
+    "zanpid",
+    "msclkid",
+    "mc_eid",
+    "caff",
+    "_openstat",
+    "_hsmi",
+    "_hsenc",
+    "spm",
+    "spm_id_from",
+    "pf_rd_r",
+    "pf_rd_m",
+    "pf_rd_i",
+    "pf_rd_s",
+    "pf_rd_t",
+    "pf_rd_p",
+    "partner",
+    "utm_source",
+    "utm_medium",
+    "utm_term",
+    "utm_campaign",
+    "utm_content",
+    "utm_name",
+    "utm_id",
+    "__cft__[0]",
+    "__tn__",
+    "si"
+  ];
 
   let requestedUrl = new URL(request.url);
   let match = false;

@@ -6,7 +6,8 @@ Dev work on Web Extensions for Firefox, Chrome, and Brave.
 FBclid - Facebook Click Identifier.
 utm - Urchin Tracking Module. 
 
-For now, the full list of query params that get stripped out of URLs are "fbclid", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "utm_brand", "\_\_cft\_\_[0]" and "\_\_tn\_\_".
+
+For now, the full list of query params that get stripped out of URLs are "fbclid", "gclid", "gclsrc", "ysclid", "dclid", "zanpid", "msclkid", "mc_eid", "caff", "_openstat","_hsmi", "_hsenc", "spm", "spm_id_from", "pf_rd_r", "pf_rd_m", "pf_rd_i", "pf_rd_s", "pf_rd_t", "pf_rd_p", "partner", "utm_source", "utm_medium", "utm_term", "utm_campaign", "utm_content", "utm_name", "utm_id", "__cft__[0]", "__tn__" and "si"
 
 ## Chrome Example
 Tutorial from Google on building Web Extensions: https://developer.chrome.com/extensions/getstarted

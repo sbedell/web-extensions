@@ -6,19 +6,37 @@ FBclid - Facebook Click Identifier - https://fbclid.com/
 utm - Urchin Tracking Module - https://en.wikipedia.org/wiki/UTM_parameters
 
 The full list of query params that get stripped out of URLs are (for now):
-- fbclid
-- gclid
-- ysclid
-- utm_source
-- utm_medium 
-- utm_campaign
-- utm_term
-- utm_content
-- utm_name
-- utm_id
-- si
-- \_\_tn\_\_
-- \_\_cft\_\_[0]
+- fbclid, 
+- gclid, 
+- gclsrc, 
+- ysclid, 
+- dclid, 
+- zanpid, 
+- msclkid, 
+- mc_eid, 
+- caff, 
+- _openstat, 
+- _hsmi, 
+- _hsenc, 
+- spm, 
+- spm_id_from, 
+- pf_rd_r, 
+- pf_rd_m, 
+- pf_rd_i, 
+- pf_rd_s, 
+- pf_rd_t, 
+- pf_rd_p, 
+- partner, 
+- utm_source, 
+- utm_medium, 
+- utm_term, 
+- utm_campaign, 
+- utm_content, 
+- utm_name, 
+- utm_id, 
+- \_\_cft\_\_[0], 
+- \_\_tn\_\_, 
+- si"
 
 ---
 
